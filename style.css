@@ -24,20 +24,22 @@
 
 body {
   /* margin-left: 10%; */
-  padding: 0;
+  padding-bottom: 50px;
   font-family: var(--font-main);
   line-height: 1.6;
   color: var(--color-text);
   /* background-color: var(--color-bg); */
   height: 100%;
   /* margin: 2vw; */
+background: 
+  radial-gradient(circle at 20% 20%, #0f2b35 0%, #4a6a7a 65%),
+  linear-gradient(190deg, #8a4b2f 20%, #a67c6f 48%, #c4d7e0 100%); 
 
-  background: radial-gradient(circle at 20% 20%, rgba(255, 249, 239, 0.65), rgba(255, 249, 239, 0) 45%),
-    linear-gradient(160deg, #3b4653 0%, #7f8a94 48%, #e3ddd4 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
   position: relative;
+
   font-family: "Montserrat", serif;
   font-size: 2vw;
 
@@ -64,17 +66,35 @@ body {
 .page-container {
   display: flex;
   flex-direction: column;
-  margin-top: 15%;
+  margin-top: 5%;
   margin-left: 50%;
   transform: translateX(-50%);
   line-height: 1.7;
   border: black solid 1px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
   padding: 5%;
+  width: 60%;
+    
+  background: radial-gradient(circle at 20% 20%, rgba(255, 249, 239, 0.65), rgba(255, 249, 239, 0) 45%),
+    linear-gradient(160deg, #3b4653 0%, #7f8a94 48%, #e3ddd4 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  position: relative;
 
-  max-width: 12100px;
-  min-width: 80%;
 }
+
+#quote {
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 600;
+  text-align: center;
+
+
+}
+
+
+
 
 #shift-right {
   margin: 0 auto;
