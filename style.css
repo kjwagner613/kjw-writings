@@ -1,8 +1,8 @@
 .montserrat-dd {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }
 
 :root {
@@ -17,6 +17,11 @@
   --max-width: 860px;
 }
 
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   /* margin-left: 10%; */
   padding: 0;
@@ -24,48 +29,57 @@ body {
   line-height: 1.6;
   color: var(--color-text);
   /* background-color: var(--color-bg); */
-      height: 100%;
-    /* margin: 2vw; */
+  height: 100%;
+  /* margin: 2vw; */
 
-    background: radial-gradient(circle at 20% 20%, rgba(255, 249, 239, 0.65), rgba(255, 249, 239, 0) 45%),
-        linear-gradient(160deg, #3b4653 0%, #7f8a94 48%, #e3ddd4 100%);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    position: relative;
-    font-family: "Montserrat", serif;
-    font-size: 2vw;
+  background: radial-gradient(circle at 20% 20%, rgba(255, 249, 239, 0.65), rgba(255, 249, 239, 0) 45%),
+    linear-gradient(160deg, #3b4653 0%, #7f8a94 48%, #e3ddd4 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  position: relative;
+  font-family: "Montserrat", serif;
+  font-size: 2vw;
 
 
 }
 
 .tmargin {
-    margin-top: 8%;
+  margin-top: 8%;
+  margin-right: 150px;
+  ;
 }
 
 .cbutton {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 40px;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #333;
-    text-decoration: none;
-    border-radius: 5px;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 40px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #333;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
 .page-container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 15%;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    line-height: 1.7;
-    border: black solid 1px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-    padding: 5%;
-    min-width: 300px;
-    max-width: 600 px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  line-height: 1.7;
+  border: black solid 1px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  padding: 5%;
+
+  max-width: 12100px;
+  min-width: 80%;
+}
+
+#shift-right {
+  margin: 0 auto;
+  display: inline-block;
+  /* transform: translateX(18% ); */
 
 }
 
@@ -85,19 +99,19 @@ body {
 }
 
 link {
-    font-style: italics;
-    color: black;
+  font-style: italics;
+  color: black;
 
 
 }
 
 
 #logo {
-    margin-left: 40%;
-    transform: translateX(-50%);
-    transform: scale(2.5);
-    margin-top: 1%;
-    margin-bottom: 8% ;
+  margin-left: 40%;
+  transform: translateX(-50%);
+  transform: scale(2.5);
+  margin-top: 1%;
+  margin-bottom: 8%;
 }
 
 .tinos-regular {
@@ -124,22 +138,6 @@ link {
   font-style: italic;
 }
 
-
-:root {
-  --font-main: "Montserrat", serif;
-  --font-weight: 700;
-  --font-style: normal;
-  --font-alt: "Arial", sans-serif;
-  --color-bg: #e0caa3;
-  --color-text: #1f1f1f;
-  --color-text-muted: #333333;
-  --color-border: #d6cfc5;
-  --max-width: 860px;
-}
-
-* {
-  box-sizing: border-box;
-}
 
 
 
@@ -185,5 +183,3 @@ hr {
   padding-left: 1rem;
   margin-left: 0.5rem;
 }
-
-
