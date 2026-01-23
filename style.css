@@ -18,6 +18,39 @@
 }
 
 
+.text-lightener {
+  background: radial-gradient(circle at 20% 20%, #9caaaf 0%, #78c8f0 65%);
+  background-color: rgba(255, 255, 255, 0.2);
+  /* border: 1px solid rgba(0, 0, 0, 0.1); */
+  border: black solid 1px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+
+  border-radius: 15px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: rgba(105, 100, 91, 0.65) 0px 4px 6px -1px, rgba(255, 249, 239, 0) 0px 2px 4px -1px;
+  padding: 45px;
+}
+
+.text-image {
+  background-image: url(images/paper-vert.png);
+ 
+  border: black solid 1px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+
+  border-radius: 15px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: rgba(105, 100, 91, 0.65) 0px 4px 6px -1px, rgba(255, 249, 239, 0) 0px 2px 4px -1px;
+  padding: 45px;
+}
+
+#author {
+  text-indent: 5%;
+
+}
+
+
 * {
   box-sizing: border-box;
 }
@@ -31,9 +64,9 @@ body {
   /* background-color: var(--color-bg); */
   height: 100%;
   /* margin: 2vw; */
-background: 
-  radial-gradient(circle at 20% 20%, #0f2b35 0%, #4a6a7a 65%),
-  linear-gradient(190deg, #8a4b2f 20%, #a67c6f 48%, #c4d7e0 100%); 
+  background:
+    radial-gradient(circle at 20% 20%, #6c8892 0%, #679fbb 65%),
+    linear-gradient(190deg, #8a4b2f 20%, #a67c6f 48%, #c4d7e0 100%);
 
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -41,7 +74,7 @@ background:
   position: relative;
 
   font-family: "Montserrat", serif;
-  font-size: 2vw;
+  font-size: 1.1vw;
 
 
 }
@@ -51,6 +84,13 @@ background:
   margin-right: 150px;
   ;
 }
+
+ul {
+  margin-top: 3vh;
+  margin-left: 3vw;
+
+}
+
 
 .cbutton {
   display: inline-block;
@@ -74,7 +114,8 @@ background:
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
   padding: 5%;
   width: 60%;
-    
+  border-radius: 15px;
+
   background: radial-gradient(circle at 20% 20%, rgba(105, 100, 91, 0.65), rgba(255, 249, 239, 0) 45%),
     linear-gradient(160deg, #3b4653 0%, #456d92 48%, #886e47 100%);
   background-repeat: no-repeat;
@@ -83,6 +124,7 @@ background:
   position: relative;
 
 }
+
 
 #quote {
   font-size: 1.2rem;
@@ -116,13 +158,6 @@ background:
 #height {
 
   margin-top: 20px;
-}
-
-link {
-  font-style: italics;
-  color: black;
-
-
 }
 
 
