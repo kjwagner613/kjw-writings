@@ -69,6 +69,21 @@ body {
 
 }
 
+.mirror {
+  transform: scaleX(-1);
+  display: inline-block;
+}
+
+.upside-down {
+  transform: rotate(180deg);
+  display: inline-block;
+}
+
+#height {
+
+  margin-top: 20px;
+}
+
 link {
     font-style: italics;
     color: black;
@@ -81,7 +96,7 @@ link {
     margin-left: 40%;
     transform: translateX(-50%);
     transform: scale(2.5);
-    margin-top: 8%;
+    margin-top: 1%;
     margin-bottom: 8% ;
 }
 
