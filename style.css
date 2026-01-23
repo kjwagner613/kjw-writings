@@ -75,8 +75,8 @@ background:
   padding: 5%;
   width: 60%;
     
-  background: radial-gradient(circle at 20% 20%, rgba(255, 249, 239, 0.65), rgba(255, 249, 239, 0) 45%),
-    linear-gradient(160deg, #3b4653 0%, #7f8a94 48%, #e3ddd4 100%);
+  background: radial-gradient(circle at 20% 20%, rgba(105, 100, 91, 0.65), rgba(255, 249, 239, 0) 45%),
+    linear-gradient(160deg, #3b4653 0%, #456d92 48%, #886e47 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
