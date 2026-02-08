@@ -9,12 +9,17 @@ const { Pool } = require('pg');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// Honor X-Forwarded-For on Heroku so req.ip reflects the client.
+app.set('trust proxy', true);
+
 // In-memory fallback (used only if DATABASE_URL is missing).
 const stats = {
   totalVisits: 0,
   uniqueVisitors: 0,
 };
 const seenVisitorIds = new Set();
+
+
 
 const databaseUrl = process.env.DATABASE_URL;
 const pool = databaseUrl
@@ -79,6 +84,9 @@ app.use((req, res, next) => {
 app.use(express.static(path.join(__dirname, '..')));
 
 app.post('/api/visit', async (req, res) => {
+  if (req.ip && req.ip.startsWith('66.190.224.')) {
+    return res.json({ ok: true, skipped: true });
+  }
   let visitorId = req.cookies.vid;
   let isNew = false;
 
