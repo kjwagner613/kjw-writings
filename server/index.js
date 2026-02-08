@@ -20,7 +20,8 @@ const databaseUrl = process.env.DATABASE_URL;
 const pool = databaseUrl
   ? new Pool({
       connectionString: databaseUrl,
-      ssl: databaseUrl.includes('sslmode=require') ? { rejectUnauthorized: false } : false,
+      // Heroku Postgres requires SSL; accept their cert.
+      ssl: { rejectUnauthorized: false },
     })
   : null;
 
